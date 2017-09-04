@@ -1,0 +1,26 @@
+{
+  "name": "litecoin-tip-reddit-bot",
+  "version": "1.0.0",
+  "description": "Litecoin tip bot which operates on /r/litecoin",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/walshie4/litecoin_tip_reddit_bot.git"
+  },
+  "author": "walshie4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/walshie4/litecoin_tip_reddit_bot/issues"
+  },
+  "homepage": "https://github.com/walshie4/litecoin_tip_reddit_bot#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "node-litecoin": "^1.0.1",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.14.2"
+  }
+}
