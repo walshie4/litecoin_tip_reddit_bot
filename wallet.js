@@ -1,6 +1,7 @@
 const litecoin = require('node-litecoin');
 
 const MIN_CONFIRMATIONS = 6;
+const LOCK_TIMEOUT = 3;
 
 const ltc = new litecoin({
   host: 'localhost',
@@ -28,7 +29,7 @@ function lockWallet() {
 
 function unlockWallet() {
   const pass = process.env.LOCK_PASSPHRASE;
-  return ltc.walletPassPhrase(pass);
+  return ltc.walletPassPhrase(pass, LOCK_TIMEOUT);
 }
 
 
